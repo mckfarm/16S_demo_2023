@@ -1,7 +1,6 @@
 # 00 Pre work
 Review this info prior to starting any scripting or job execution!  
 
-
 Objectives:
 - Determine how microbiome analysis fits into your research questions
 - Review exmaples of microbiome analysis

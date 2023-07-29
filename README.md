@@ -9,6 +9,9 @@ This demo will cover a simplified analysis of bacterial communities in a wastewa
 
 ## Topics
 - [Pre work](/docs/00_prework.md)
+- [QIIME overview and getting set up](/docs/01_qiime_intro.md)
+- [Importing data](/docs/02_import_data.md)
+- [Trim reads](/docs/03_trim_reads.md)
 
 More coming soon! 
 
