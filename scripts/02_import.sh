@@ -21,5 +21,9 @@ qiime tools import \
 --input-format PairedEndFastqManifestPhred33V2 \
 --type SampleData[PairedEndSequencesWithQuality]
 
+qiime demux summarize \
+--i-data /projects/p31629/calumet/qiime_io/reads.qza  \
+--o-visualization /projects/p31629/calumet/qiime_io/readquality_raw.qzv
+
 ## using a space and backslash allows you to insert a linebreak without disrupting the function
 ## you can also have the command written as one line but this is harder to read

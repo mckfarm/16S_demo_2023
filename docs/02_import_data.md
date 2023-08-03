@@ -42,4 +42,8 @@ There are a few critical components to the `import` command:
 
 To see a full list of options for the `input-format` and `type` flags, activate the QIIME2 module in the command line, then run `qiime tools import --show-importable-formats` and `qiime tools import --show-importable-types`. You can also run the `--help` flag on any QIIME commands or view the [QIIME documentation](https://docs.qiime2.org/2023.5/) if you'd like to learn more than what you see in this tutorial. 
 
-Run your script with the `sbatch` command. If it is successful, you should see a new file with a `.qza` extension in your output directory.
+You may also notice the second `demux` command in the example script. This command will allow you to view the data in your `.qza` file in the [QIIME viewer](https://view.qiime2.org/). The `i-data` flag should point to where you saved your `.qza` file in the `import` command. The `o-visualization` flag should point to where you want your visualization file `.qzv` to be saved.
+
+Run your script with the `sbatch` command. If it is successful, you should see new files with `.qza` and `.qzv` extensions in your output directory. To view your data, download your `.qzv` file and upload it to the [QIIME viewer](https://view.qiime2.org/).
+
+You are now ready to start processing your raw reads!
