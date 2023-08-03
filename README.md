@@ -17,6 +17,10 @@ More coming soon!
 
 
 ## Advanced topics
+### Interactive job vs bash submission script
+We will be using the command line version of QIIME to process our data and will be using bash submission scripts to run each step. You can run some steps in an interactive job because they run relatively quickly, but for the purposes of this demo, we will only be using bash scripts so you have copies of your code saved and have a record of how long things took to execute and with how much memory. 
+
+
 ### Other sources of data
 In this tutorial, I provided you with curated sequencing data from a past sequencing project. Feel free to look for datasets you find in literature or through collaborations to practice the pipeline. If you do this, be sure to have the raw reads in the fastq.gz format and find the associated metadata so you can perform the data analysis portion. 
 

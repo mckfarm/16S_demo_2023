@@ -15,7 +15,7 @@ QIIME is also a great tool for sharing data with others. You can easily make vis
 
 
 ## How do I use QIIME?
-We will be using the command line version of QIIME to process our data and will be using bash submission scripts to run each step. You can run some steps in an interactive job, but for the purposes of this demo, we will only be using bash scripts so you have copies of your code saved. You only need a few inputs to get started: raw reads in a `fastq.gz` format and a manifest file. You will transform these inputs into a QIIME-compatible format, then use a few different plugins to transform the raw sequencing data into unique sequences known as amplicon sequence variants (ASVs). Once you have your ASVs, you will be able to generate abundance tables and predict taxonomy, which is how you will be able to tell what bacteria were in a sample and how many were there. 
+You only need a few inputs to get started: raw reads in a `fastq.gz` format and a manifest file. You will transform these inputs into a QIIME-compatible format, then use a few different plugins to transform the raw sequencing data into unique sequences known as amplicon sequence variants (ASVs). Once you have your ASVs, you will be able to generate abundance tables and predict taxonomy, which is how you will be able to tell what bacteria were in a sample and how many were there. 
 
 QIIME has some built-in data analysis and visualization tools, but I prefer to generate the ASVs, abundance tables, and taxonomy tables, then import that data into R for analysis and visualization. You are welcome to use the analysis and visualization tools available in QIIME but I will not be covering that in this tutorial. 
 
