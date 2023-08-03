@@ -16,14 +16,14 @@ module load qiime2/2023.2
 
 # import reads into qiime-comatible format
 qiime tools import \
---input-path /projects/p31629/calumet/qiime_io/manifest.csv \
---output-path /projects/p31629/calumet/qiime_io/reads.qza \
+--input-path /projects/p31629/practice/mckenna/qiime_io/manifest.csv \
+--output-path /projects/p31629/practice/mckenna/qiime_io/reads.qza \
 --input-format PairedEndFastqManifestPhred33V2 \
 --type SampleData[PairedEndSequencesWithQuality]
 
 qiime demux summarize \
---i-data /projects/p31629/calumet/qiime_io/reads.qza  \
---o-visualization /projects/p31629/calumet/qiime_io/readquality_raw.qzv
+--i-data /projects/p31629/practice/mckenna/qiime_io/reads.qza  \
+--o-visualization /projects/p31629/practice/mckenna/qiime_io/readquality_raw.qzv
 
 ## using a space and backslash allows you to insert a linebreak without disrupting the function
 ## you can also have the command written as one line but this is harder to read
