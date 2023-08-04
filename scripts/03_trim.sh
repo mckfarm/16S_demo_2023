@@ -10,7 +10,6 @@
 #SBATCH --mail-type=BEGIN,END,FAIL
 #SBATCH --mail-user=mckennafarmer2023@u.northwestern.edu
 
-
 module purge all
 module load qiime2/2023.2
 
