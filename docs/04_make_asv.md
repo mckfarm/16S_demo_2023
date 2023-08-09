@@ -38,3 +38,6 @@ Like the previous steps, we will execute this command in a bash submission scrip
 
 ### View outputs from dada2
 The last two commands in the [example script](/scripts/04_asv.sh) produce `.qzv` files for you to upload to the QIIME viewer. Check out the outputs and see what info each file gives you. We will talk about these outputs more in person! 
+
+### Run time and memory? 
+This is the first step of the pipeline that takes more than a few minutes to run. I don't think this will take more than the run time and memory in the example script, but you may have to rerun the script if it fails due to time or memory limitations.
