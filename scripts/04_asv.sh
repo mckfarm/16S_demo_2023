@@ -16,8 +16,8 @@ module load qiime2/2023.2
 
 # run dada2 to identify ASVs
 qiime dada2 denoise-paired --verbose \
---i-demultiplexed-seqs /projects/p31629/practice/mckenna/qiime_io/reads_trimmed.qza \
 --p-trunc-len-f 242 --p-trunc-len-r 200 \
+--i-demultiplexed-seqs /projects/p31629/practice/mckenna/qiime_io/reads_trimmed.qza \
 --o-representative-sequences /projects/p31629/practice/mckenna/qiime_io/rep_seqs_dada2.qza \
 --o-table /projects/p31629/practice/mckenna/qiime_io/table_dada2.qza \
 --o-denoising-stats /projects/p31629/practice/mckenna/qiime_io/stats_dada2.qza
