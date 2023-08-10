@@ -23,11 +23,11 @@ A manifest file is a text file that you use tell QIIME a unique sample name, whe
 You must make sure the following components are correct in your manifest file:
 - Headers are **sample-id**, **forward-absolute-filepath**, and **reverse-absolute-filepath**. These must be in lowercase, spelled correctly, and with a dash in **sample-id**.
 - The file paths to each read must be complete - this includes the file name and every directory back up to the `projects` folder.
-- The manifest file must be saved as a comma separated values (.csv) file. You cannot use a tab or space delimited file.
+- **Save this as a .txt file with tab-delimited values** (revision from in-person session on August 10)!!!
 
 Making the manifest file can be very tedious. With only a handful of samples like this, I typically copy the outputs of `ls -l` into an Excel spreadsheet, then manipulate the information until it is in the correct format, save as a csv, then upload to Quest. If you had hundreds of samples to process, I would recommend writing a Python or R script to automate this task. 
 
-When you are done making the manifest file, save your manifest as `manifest.csv` to your `qiime_io` folder. Now that you have your raw reads and manifest file, you are ready to import your data into QIIME!
+When you are done making the manifest file, save your manifest as `manifest.txt` to your `qiime_io` folder. Now that you have your raw reads and manifest file, you are ready to import your data into QIIME!
 
 ### Importing data
 We will be using a bash submission script to invoke the `import` command in QIIME. This will consolidate your separate files into one `.qza` file. You can find an [example script here](/scripts/02_import.sh).
