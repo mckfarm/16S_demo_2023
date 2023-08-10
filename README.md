@@ -16,6 +16,11 @@ This demo will cover a simplified analysis of bacterial communities in a wastewa
 
 More coming soon! 
 
+## Useful programs
+Command line interface with Quest - PuTTY on Windows, Terminal on Mac
+Code editor - Visual Studio Code for Windows and Mac
+File explorer - WinSCP for Windows, FileZilla for Windows and MAc
+
 
 ## Advanced topics
 ### Interactive job vs bash submission script
