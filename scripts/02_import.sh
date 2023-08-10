@@ -22,7 +22,7 @@ qiime tools import \
 --type SampleData[PairedEndSequencesWithQuality]
 
 qiime demux summarize \
---i-data /projects/p31629/practice/mckenna/qiime_io/reads.qza  \
+--i-data /projects/p31629/practice/mckenna/qiime_io/reads.qza \
 --o-visualization /projects/p31629/practice/mckenna/qiime_io/readquality_raw.qzv
 
 ## using a space and backslash allows you to insert a linebreak without disrupting the function
