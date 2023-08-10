@@ -12,6 +12,7 @@ This demo will cover a simplified analysis of bacterial communities in a wastewa
 - [QIIME overview and getting set up](/docs/01_qiime_intro.md)
 - [Import data](/docs/02_import_data.md)
 - [Trim reads](/docs/03_trim_reads.md)
+- [Make amplicon sequence variants](/docs/04_make_asv.md)
 
 More coming soon! 
 
