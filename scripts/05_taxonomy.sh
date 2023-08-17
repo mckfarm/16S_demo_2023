@@ -14,6 +14,7 @@ module purge all
 module load qiime2/2023.2
 
 # classify sequences from previous step
+## keep the classifier filepath the same
 qiime feature-classifier classify-sklearn \
 --i-classifier /projects/p31629/practice/midas_4.8.1_classifier_new.qza \
 --i-reads /projects/p31629/practice/mckenna/qiime_io/rep_seqs_dada2.qza \
