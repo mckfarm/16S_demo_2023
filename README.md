@@ -13,6 +13,9 @@ This demo will cover a simplified analysis of bacterial communities in a wastewa
 - [Import data](/docs/02_import_data.md)
 - [Trim reads](/docs/03_trim_reads.md)
 - [Make amplicon sequence variants](/docs/04_make_asv.md)
+- [Classify taxonomy](/docs/05_taxonomy.md)
+- [Make phylogenetic tree](/docs/06_phylogeny.md)
+- [Preparing for data analysis](/docs/07_analysis_prep.md)
 
 More coming soon! 
 
