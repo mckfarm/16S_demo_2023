@@ -27,8 +27,8 @@ A trained classifier is stored in another `.qza` file. An important note is that
 ### Run classifier
 Like the previous steps, we will execute this command in a bash submission script - check out the script [here](/scripts/05_taxonomy.sh). Let's walk through the key components of the classifier command.  
 
-- `feature-classifier` is the command we are executing
-- `classify-sklearn` is telling QIIME to use the scikit-learn method of classification
+- `feature-classifier` tells QIIME to call a classifier tool
+- `classify-sklearn` tells QIIME to use the scikit-learn method of classification
 - `--i-classifier` tells QIIME where the pre-trained classifier is saved
 - `--i-reads` is where your ASVs are saved
 - `--o-classification` is where you'd like the taxonomy QIIME artificat to be saved
