@@ -1,0 +1,19 @@
+---
+title: "Example analysis"
+output: html_notebook
+---
+
+Set up packages
+
+```{r message=FALSE, warning=FALSE}
+library(qiime2R)
+library(phyloseq)
+library(tidyverse)
+```
+
+
+Read in data
+```{r}
+
+```
+

@@ -1,0 +1,11 @@
+sample-id	forward-absolute-filepath	reverse-absolute-filepath	
+C1	/projects/p31629/practice/raw_reads/1120-12-C1_S12_L001_R1_001.fastq.gz	/projects/p31629/practice/raw_reads/1120-12-C1_S12_L001_R2_001.fastq.gz	
+C5	/projects/p31629/practice/raw_reads/1120-16-C5_S16_L001_R1_001.fastq.gz	/projects/p31629/practice/raw_reads/1120-16-C5_S16_L001_R2_001.fastq.gz	
+C10	/projects/p31629/practice/raw_reads/1120-21-C10_S21_L001_R1_001.fastq.gz	/projects/p31629/practice/raw_reads/1120-21-C10_S21_L001_R2_001.fastq.gz	
+C16	/projects/p31629/practice/raw_reads/1120-26-C16_S26_L001_R1_001.fastq.gz	/projects/p31629/practice/raw_reads/1120-26-C16_S26_L001_R2_001.fastq.gz	
+C15	/projects/p31629/practice/raw_reads/1120-27-C15_S27_L001_R1_001.fastq.gz	/projects/p31629/practice/raw_reads/1120-27-C15_S27_L001_R2_001.fastq.gz	
+T22	/projects/p31629/practice/raw_reads/1120-49-T22_S49_L001_R1_001.fastq.gz	/projects/p31629/practice/raw_reads/1120-49-T22_S49_L001_R2_001.fastq.gz	
+T26	/projects/p31629/practice/raw_reads/1120-53-T26_S53_L001_R1_001.fastq.gz	/projects/p31629/practice/raw_reads/1120-53-T26_S53_L001_R2_001.fastq.gz	
+T31	/projects/p31629/practice/raw_reads/1120-58-T31_S58_L001_R1_001.fastq.gz	/projects/p31629/practice/raw_reads/1120-58-T31_S58_L001_R2_001.fastq.gz	
+T35	/projects/p31629/practice/raw_reads/1120-62-T35_S62_L001_R1_001.fastq.gz	/projects/p31629/practice/raw_reads/1120-62-T35_S62_L001_R2_001.fastq.gz	
+T36	/projects/p31629/practice/raw_reads/1120-63-T36_S63_L001_R1_001.fastq.gz	/projects/p31629/practice/raw_reads/1120-63-T36_S63_L001_R2_001.fastq.gz	

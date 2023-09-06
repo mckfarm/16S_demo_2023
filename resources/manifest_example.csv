@@ -1,3 +1,0 @@
-sample-id,forward-absolute-filepath,reverse-absolute-filepath
-RAS1,/projects/p31629/calumet/raw_reads/1120-01-RAS1_S1_L001_R1_001.fastq.gz,/projects/p31629/calumet/raw_reads/1120-01-RAS1_S1_L001_R2_001.fastq.gz
-RAS2,/projects/p31629/calumet/raw_reads/1120-02-RAS2_S2_L001_R1_001.fastq.gz,/projects/p31629/calumet/raw_reads/1120-02-RAS2_S2_L001_R2_001.fastq.gz

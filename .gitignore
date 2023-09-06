@@ -1,2 +1,2 @@
 *.DS_store
-/resources/manifest_full.txt
+.Rproj.user
