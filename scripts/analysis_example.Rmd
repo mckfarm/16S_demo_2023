@@ -1,10 +1,14 @@
 ---
 title: "Example analysis"
-output: html_notebook
+output:
+  html_notebook:
+    theme: spacelab
+    toc: true
+    toc_float: true
 ---
+This notebook provides example code and suggestions for analyzing microbiome sequence data. You can perform similar analysis in Python using the QIIME Artifact API, but I am much more comfortable and familiar with R for any kind of data analysis and plotting. This is just a personal preference, as both programming languages and external packages can perform the same tasks. I use R because I find data manipulation with the dplyr package and plotting with the ggplot2 package to be much more intuitive than doing the same thing in Python.
 
-Set up packages
-
+# Set up packages
 ```{r message=FALSE, warning=FALSE}
 library(qiime2R)
 library(phyloseq)
@@ -12,8 +16,42 @@ library(tidyverse)
 ```
 
 
-Read in data
+# Read in data
+I read in the QIIME artifacts as a phyloseq object. Phyloseq is an R package that has many convenient functions built in for manipulating and analyzing microbiome data. If you decide to use Python with the QIIME API, you should be able to do similar operations. 
+```{r}
+phyloseq_all <- qiime2R::qza_to_phyloseq(
+  features="./data/table_dada2.qza",
+  tree="./data/rooted_tree.qza",
+  taxonomy="./data/taxonomy.qza",
+  metadata = "./data/16S_metadata.txt"
+)
+
+```
+
+
+# Basic filtering and parsing
+Next I will perform some basic filtering functions to remove unwanted sequences and calculate relative abundances for all the samples. We will use the relative abundance object for plotting and downstream analysis.
+```{r}
+# remove Mitochondria (eukaryotes) and Chloroplasts
+phyloseq_filt <- phyloseq::subset_taxa(phyloseq_all, 
+                                 !Genus=="Mitochondria" & !Genus=="Chloroplast")
+
+# relative abundance
+phyloseq_filt_rel <- phyloseq::transform_sample_counts(phyloseq_filt, function(x) x*100/sum(x))
+
+# remove phyloseq_all object
+rm(phyloseq_all)
+
+```
+
+
+# Saving data as dataframe
+I will save the relative abundance data in a dataframe to use a wider array of filtering and plotting options available with other R packages.
+
+# Taxonomy bar plots
+## Top genera
 ```{r}
 
 ```
 
+## Filtered by interesting microbes
