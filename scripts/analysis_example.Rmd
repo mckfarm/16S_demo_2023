@@ -27,7 +27,7 @@ ps <- qiime2R::qza_to_phyloseq(
   features="./data/table_dada2.qza",
   tree="./data/rooted_tree.qza",
   taxonomy="./data/taxonomy.qza",
-  metadata = "./data/16S_metadata.txt"
+  metadata = "./resources/metadata.txt"
 )
 
 ```
