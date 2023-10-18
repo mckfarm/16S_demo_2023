@@ -1,10 +1,13 @@
 ---
 title: "Example analysis"
 output:
+  html_document:
+    toc: yes
+    df_print: paged
   html_notebook:
     theme: spacelab
-    toc: true
-    toc_float: true
+    toc: yes
+    toc_float: yes
 ---
 This notebook provides example code and suggestions for analyzing microbiome sequence data. You can perform similar analysis in Python using the QIIME Artifact API, but I am much more comfortable and familiar with R for any kind of data analysis and plotting. This is just a personal preference, as both programming languages and external packages can perform the same tasks. I use R because I find data manipulation with the dplyr package and plotting with the ggplot2 package to be much more intuitive than doing the same thing in Python.
 
@@ -68,7 +71,7 @@ head(metadata)
 table_rel <- as.data.frame(as.matrix(ps_rel@otu_table)) %>% 
   rownames_to_column(var = "seq")
 
-head(table_count)
+head(table_rel)
 
 ```
 
