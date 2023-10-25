@@ -26,6 +26,9 @@ library(MetBrewer) # fun color palettes
 # Read in data
 I read in the QIIME artifacts as a phyloseq object. Phyloseq is an R package that has many convenient functions built in for manipulating and analyzing microbiome data. We will use the qiime2R package to import the QIIME data directly into a phyloseq object. 
 ```{r}
+
+getwd() 
+
 ps <- qiime2R::qza_to_phyloseq(
   features="./data/table_dada2.qza",
   tree="./data/rooted_tree.qza",
@@ -79,13 +82,13 @@ This chunk manipulates the relative abundance table and combines it with the tax
 
 ```{r}
 
-table_rel <- table_rel %>% 
+table_rel_long <- table_rel %>% 
   pivot_longer(cols = !seq, names_to = "sample", values_to = "rel_ab") %>% # make a "long" dataframe
   left_join(taxonomy, join_by(seq)) %>% # join taxonomy by the sequence ID
   left_join(metadata, join_by(sample)) # join metadata by the sample ID
 
 
-head(table_rel)
+head(table_rel_long)
 
 ```
 
@@ -95,7 +98,7 @@ head(table_rel)
 We can use a variety of filtering functions from dplyr to manipulate data for more concise plots. For example, we could select specific bacteria to look for, or group all members of the same family or genus together. Let's do a simple example - we will plot the abundance of the genus Zoogleoa from each sampling location. First, let's see what the data looks like when we filter it to our specifications. 
 ```{r}
 
-table_rel %>% # perform some functions on table_rel
+table_rel_long %>% # perform some functions on table_rel
   group_by(Genus, timepoint, location) %>% # group at the genus level, we will use this to sum up everything that has the same genus (ignore species)
   summarise(sum_ab = sum(rel_ab)) %>% # sum up the relative abundance of each unique Genus at each unique combination of date and location
   filter(Genus == "Zoogloea") 
@@ -105,7 +108,7 @@ table_rel %>% # perform some functions on table_rel
 We can save that table as a new R data frame, or we can pipe that data directly into a ggplot2 command. Notice that the timepoint column is the "character" class rather than a numeric class like a "double" Let's add a modification so the timepoint column is correctly classified.
 
 ```{r}
-table_rel %>% # perform some functions on table_rel
+table_rel_long %>% # perform some functions on table_rel
   group_by(Genus, timepoint, location) %>% 
   summarise(sum_ab = sum(rel_ab)) %>% 
   filter(Genus == "Zoogloea") %>% 
@@ -115,7 +118,7 @@ table_rel %>% # perform some functions on table_rel
 Next, we can make a simple plot showing the Zoogloea abundance over time. Let's pipe the data directly into the ggplot command.
 
 ```{r}
-table_rel %>% # perform some functions on table_rel
+table_rel_long %>% # perform some functions on table_rel
   group_by(Genus, timepoint, location) %>% 
   summarise(sum_ab = sum(rel_ab)) %>% 
   filter(Genus == "Zoogloea") %>% 
@@ -128,7 +131,7 @@ table_rel %>% # perform some functions on table_rel
 This plot is okay, but we want to show the Zoogloea abundance from each sampling location, not all together. This is where the long data format comes in handy - we can easily tell ggplot2 that we want to change the aesthetics of the plot based on a column variable, in this case location.
 ```{r}
 
-table_rel %>% # perform some functions on table_rel
+table_rel_long %>% # perform some functions
   group_by(Genus, timepoint, location) %>% 
   summarise(sum_ab = sum(rel_ab)) %>% 
   filter(Genus == "Zoogloea") %>% 
