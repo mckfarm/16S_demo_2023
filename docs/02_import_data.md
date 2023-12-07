@@ -13,7 +13,7 @@ QIIME uses files called "artifacts", which store data and metadata together in o
 To use your raw reads from the sequencing center, you will have to import your reads into a `.qzv` file. To do this, you will need your raw reads in a known location (done in the previous tutorial) and a manifest file.
 
 ## What is a manifest file?
-A manifest file is a text file that you use tell QIIME a unique sample name, where the raw reads are of each sample are saved and, if you are using paired-end sequences, whether each file is a forward or reverse read. It is critical you follow the format provided in the [example manifest file](/resources/manifest_example.csv). 
+A manifest file is a text file that you use tell QIIME a unique sample name, where the raw reads are of each sample are saved and, if you are using paired-end sequences, whether each file is a forward or reverse read. It is critical you follow the format provided in the [example manifest file](/resources/manifest_full.txt). 
 
 ## Practice
 
