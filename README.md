@@ -16,6 +16,7 @@ This demo will cover a simplified analysis of bacterial communities in a wastewa
 - [Classify taxonomy](/docs/05_taxonomy.md)
 - [Make phylogenetic tree](/docs/06_phylogeny.md)
 - [Preparing for data analysis](/docs/07_analysis_prep.md)
+- [Example analysis](https://github.com/mckfarm/16S_demo_2023/blob/main/scripts/analysis_example.Rmd)
 
 More coming soon! 
 
