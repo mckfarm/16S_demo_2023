@@ -27,8 +27,9 @@ If you are using paired-end sequencing (which we are using for this demo), you w
 
 In this demo, we are using data from 2x300 bp sequencing on an Illumina MiSeq. The 16S PCR primers used target the region between positions 515-926 of the 16S rRNA gene, which is 411 bp. Then add the length of the primers and linkers to the target sequence, which is 41 bp on each primer, to obtain a final PCR product length of 494 bp. This is well below the 599 bp length limitation of the sequencing method, so we are good to go! 
 
+
 ## Practice
-Now that you have a broad overview of QIIME and what you need to get started, it's time to set up a working directory in Quest to use for this tutorial. 
+Now that you have a broad overview of QIIME and what you need to get started, it's time to set up a working directory in Quest to use for this tutorial. **I provide practice data in this tutorial, but if you have your own sequencing data you would like to use, see [this page](/docs/01.1_data_to_quest.md) for more details.**
 
 First, create folder in this directory that you will use for the rest of the tutorial: 
 `/projects/p31629/practice`. 
@@ -41,4 +42,4 @@ Finally, copy the raw reads you will use for the rest of this tutorial into your
 - Make a `raw_reads` directory in your own working folder, then selectively copy files with the extension `fastq.gz` into your `raw_reads` folder (hint: use a wildcard * with the cp function to grab files that match the extension)
 - Directly copy the `raw_reads` folder from the above location into your project folder (hint: copy the directory recursively with the -r flag to copy all the files within the `raw_reads` directory)
 
-To check if you created your directory properly and copied the reads correctly, make sure you check the directory with `ls` or use a program with a GUI to look at your files
+To check if you created your directory properly and copied the reads correctly, make sure you check the directory with `ls` or use a program with a GUI to look at your files.

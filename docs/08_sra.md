@@ -1,4 +1,4 @@
-# 07 Submitting sequences to Sequence Read Archive (SRA)
+# 08 Submitting sequences to Sequence Read Archive (SRA)
 This document will provide an overview of how to submit your sequences to the Sequence Read Archive service hosted by NCBI.  
 
 Objectives:
