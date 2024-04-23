@@ -32,7 +32,7 @@ You should submit your sequences to SRA as soon as possible after getting the ra
     5. Save the file as a .csv. You may have to convert the line endings from CRLF (often the Windows and Microsoft product default) to LF, which you can do in VSCode or other text editors.
     6. Upload this file to Quest in the directory you saved your reads in. 
     7. Run the following code *in the Quest terminal* in the directory where your reads are to change the filenames. If you get an error or something weird happens (like the line ending issue), just delete the directory and start over by copying the raw reads again.  
-    `while IFS=, read orig new; do echo mv "$orig" "$new"; done < file.csv`  
+    `sed 's/"//g' files.csv | while IFS=, read orig new; do mv "$orig" "$new"; done`  
     8. You are done for now but will need to log back on to Quest to submit the data through the command line. Keep a list of the new sample names handy in an Excel or text file as well. Remember that the unique sample names will NOT include R1 or R2. The easiest way for me to do this in Excel was making a new column with the last part of the filename chopped off with `=left()`, then using `=unique()` on that new column to get the sample names. 
 
 
